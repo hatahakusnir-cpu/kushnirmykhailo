@@ -112,6 +112,22 @@
     max-height: 400px; /* Обмежуємо висоту, щоб не було на весь екран */
     object-fit: cover; /* Відео акуратно вписується */
 }
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* Співвідношення сторін 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
     </style>
     
 </head>
@@ -136,13 +152,13 @@
         <div class="grid">
             <div class="card">
                 <span class="tag">Постер</span>
-                <img src="d:\portfolio\Сімейні історії чорнобиля.png">
+                <img src="https://postimg.cc/PPgWnppv">
                 <h3>Сімейні історії Чорнобиля</h3>
                 <p>Розробка афіші для книги Миколи Лихолобова. Акцент на історичній пам'яті.</p>
             </div>
             <div class="card">
                 <span class="tag">Освіта</span>
-                <img src="d:\portfolio\банер (1).png">
+                <img src="https://postimg.cc/VdxqPrrr">
                 <h3>Академічна доброчесність</h3>
                 <p>Візуалізація 6 принципів: від чесності до мужності. Проєкт для Полтавської бібліотеки.</p>
             </div>
@@ -154,7 +170,7 @@
         <div class="grid">
             <div class="card">
                 <span class="tag">Спорт</span>
-                <img src="d:\portfolio\Ltava2.png">
+                <img src="https://postimg.cc/fJGcQttV">
                 <h3>АФК «Лтава»</h3>
                 <p>Повний супровід аматорського футбольного клубу: айдентика, контент-план та дизайн постів Instagram.</p>
                 <small>@afc.ltava — Відновилися, щоб перемагати!</small>
@@ -166,12 +182,12 @@
         <h2>Копірайтинг & Творчість</h2>
         <div class="grid">
             <div class="card">
-                <img src="d:\portfolio\СПОВІДЬ ДЕГЕНРАТІВ_20250103_131338_0000 (1).png">
+                <img src="https://postimg.cc/xcwvVJJb">
                 <h3>Проєкт «Сповідь дегенератів»</h3>
                 <p>Робота над дизайном та концепцією обкладинки.</p>
             </div>
             <div class="card">
-                <img src="d:\portfolio\Сімейні історії чорнобиля2 (1).png">
+                <img src="https://postimg.cc/qzPsHhhB">
                 <h3>Проєкт «Сімейні історії Чорнобиля»</h3>
                 <p>Розробка концепції та дизайну обкладинки для книги Миколи Лихолобова.</p>
             </div>
@@ -185,7 +201,8 @@
         <h3>Промо ролик для Taer</h3>
         <p>Монтаж рекламного відеоролику для компанії Taer. Задача показати процес створення від ідеї до кінцевого результату</p>
         <div class="video-container">
-            <video controls>
+            <div class="video-responsive">
+                <iframe src="https://youtu.be/oCXVlp9uhiw" frameborder="0" allowfullscreens></iframe>
                 <source src="d:\portfolio\tier.MP4" type="video/mp4">
             </video>
         </div>       
@@ -194,10 +211,8 @@
         <span class="tag">Відео</span>
             <h3>Проєкт «Форум до дня захисту прав людини»</h3>
             <p>Монтаж відео зберігаючи зміст форуму, коригування звуку, кольорова корекція.</p>
-            <div class="video-container">
-                <video controls>
-                    <source src="d:\portfolio\Форум.mov" type="video/mp4">
-                </video>
+                <div class="video-responsive">
+    <iframe src="https://youtu.be/ZulIj1bl-0Q" frameborder="0" allowfullscreen></iframe>
         </div>
     </section>
 
