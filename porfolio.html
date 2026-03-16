@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Михайло Кушнір | Портфоліо</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2d3436;
+            --accent-color: #0984e3;
+            --bg-color: #f5f6fa;
+            --text-color: #2d3436;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .hero {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: white;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            border-bottom: 3px solid var(--accent-color);
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .contact-btn {
+            background: white;
+            color: var(--accent-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        /* Обмежуємо висоту та ширину відео всередині картки */
+.video-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    line-height: 0; /* Прибирає зайвий відступ знизу */
+}
+
+.video-container video {
+    width: 100%;
+    max-height: 400px; /* Обмежуємо висоту, щоб не було на весь екран */
+    object-fit: cover; /* Відео акуратно вписується */
+}
+    </style>
+    
+</head>
+<body>
+
+<header>
+    <h1>Михайло Кушнір</h1>
+    <p>Полтава | Дизайн • Копірайтинг • Брендинг • Відеомонтаж</p>
+</header>
+
+<div class="hero">
+    <h1>Дизайн та відеомонтаж</h1>
+    <p>Створюю дизайн та відео, що мають сенс.</p>
+    <br>
+    <a href="#contact" class="contact-btn">Зв'язатися зі мною</a>
+</div>
+
+<div class="container">
+    
+    <section>
+        <h2>Графічний дизайн</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="tag">Постер</span>
+                <img src="d:\portfolio\Сімейні історії чорнобиля.png">
+                <h3>Сімейні історії Чорнобиля</h3>
+                <p>Розробка афіші для книги Миколи Лихолобова. Акцент на історичній пам'яті.</p>
+            </div>
+            <div class="card">
+                <span class="tag">Освіта</span>
+                <img src="d:\portfolio\банер (1).png">
+                <h3>Академічна доброчесність</h3>
+                <p>Візуалізація 6 принципів: від чесності до мужності. Проєкт для Полтавської бібліотеки.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>SMM та Брендинг</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="tag">Спорт</span>
+                <img src="d:\portfolio\Ltava2.png">
+                <h3>АФК «Лтава»</h3>
+                <p>Повний супровід аматорського футбольного клубу: айдентика, контент-план та дизайн постів Instagram.</p>
+                <small>@afc.ltava — Відновилися, щоб перемагати!</small>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Копірайтинг & Творчість</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="d:\portfolio\СПОВІДЬ ДЕГЕНРАТІВ_20250103_131338_0000 (1).png">
+                <h3>Проєкт «Сповідь дегенератів»</h3>
+                <p>Робота над дизайном та концепцією обкладинки.</p>
+            </div>
+            <div class="card">
+                <img src="d:\portfolio\Сімейні історії чорнобиля2 (1).png">
+                <h3>Проєкт «Сімейні історії Чорнобиля»</h3>
+                <p>Розробка концепції та дизайну обкладинки для книги Миколи Лихолобова.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Відеомонтаж</h2>
+        <div class="grid">
+    <div class="card video-card">
+        <span class="tag">Відео</span>
+        <h3>Промо ролик для Taer</h3>
+        <p>Монтаж рекламного відеоролику для компанії Taer. Задача показати процес створення від ідеї до кінцевого результату</p>
+        <div class="video-container">
+            <video controls>
+                <source src="d:\portfolio\tier.MP4" type="video/mp4">
+            </video>
+        </div>       
+            </div>
+        <div class="card video-card">
+        <span class="tag">Відео</span>
+            <h3>Проєкт «Форум до дня захисту прав людини»</h3>
+            <p>Монтаж відео зберігаючи зміст форуму, коригування звуку, кольорова корекція.</p>
+            <div class="video-container">
+                <video controls>
+                    <source src="d:\portfolio\Форум.mov" type="video/mp4">
+                </video>
+        </div>
+    </section>
+
+    <section id="values">
+        <h2>Мої принципи</h2>
+        <ul>
+            <li><strong>Етичність:</strong> Ніякого плагіату та фальсифікацій.</li>
+            <li><strong>Якість:</strong> Глибоке занурення в тему дослідження.</li>
+            <li><strong>Розвиток:</strong> Постійний вихід за межі зони комфорту.</li>
+        </ul>
+    </section>
+
+</div>
+
+
+<footer id="contact">
+    <p>Контакти: <a href="mailto:hatahakusnir@gmail.com">hatahakusnir@gmail.com</a></p>
+    <p> <a href="https://www.instagram.com/eridanus.us?igsh=MXg4eWt0bTg1dDh0cw==" target="_blank">Instagram</a></p>
+    <p> <a href="https://t.me/bubap1k" target="_blank">Telegram</a></p>
+    <p>© 2024 Михайло Кушнір. Всі права захищені.</p>
+    <p>Готовий до нових проектів у Полтаві та дистанційно.</p>
+</footer>
+
+</body>
+</html>
