@@ -11,6 +11,8 @@
             --accent-color: #0984e3;
             --bg-color: #f5f6fa;
             --text-color: #2d3436;
+            --chapter-color: #ffffff;
+        
         }
 
         body {
@@ -60,7 +62,7 @@
 
         .card {
             background: white;
-            padding: 1.5rem;
+            padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             transition: transform 0.3s;
@@ -88,6 +90,12 @@
             text-align: center;
             padding: 2rem;
             background: var(--primary-color);
+            color: white;
+        }
+        footer1 {
+            text-align: center;
+            padding: 0rem;
+            background: var(none);
             color: white;
         }
 
@@ -128,6 +136,9 @@
     height: 100%;
     border: 0;
 }
+.video-card {
+    position: relative;
+}
     </style>
     
 </head>
@@ -142,12 +153,17 @@
     <h1>Дизайн та відеомонтаж</h1>
     <p>Створюю дизайн та відео, що мають сенс.</p>
     <br>
+    <a href="#Відеомонтаж" class="contact-btn">Відеомонтаж</a>
+    <a href="#Копірайтинг & Творчість" class="contact-btn">Копірайтинг & Творчість</a>
+    <a href="#SMM та Брендинг" class="contact-btn">SMM та Брендинг</a>
+    <a href="#Графічний дизайн" class="contact-btn">Графічний дизайн</a>
     <a href="#contact" class="contact-btn">Зв'язатися зі мною</a>
 </div>
 
 <div class="container">
     
     <section>
+        <footer1 id="Графічний дизайн"></footer1>
         <h2>Графічний дизайн</h2>
         <div class="grid">
             <div class="card">
@@ -166,6 +182,7 @@
     </section>
 
     <section>
+        <footer1 id="SMM та Брендинг"></footer1>
         <h2>SMM та Брендинг</h2>
         <div class="grid">
             <div class="card">
@@ -179,6 +196,7 @@
     </section>
 
     <section>
+        <footer1 id="Копірайтинг & Творчість"></footer1>
         <h2>Копірайтинг & Творчість</h2>
         <div class="grid">
             <div class="card">
@@ -195,24 +213,26 @@
     </section>
     <section>
         <h2>Відеомонтаж</h2>
+        <footer1 id="Відеомонтаж"></footer1>
         <div class="grid">
-    <div class="card video-card">
-        <span class="tag">Відео</span>
-        <h3>Промо ролик для Taer</h3>
-        <p>Монтаж рекламного відеоролику для компанії Taer. Задача показати процес створення від ідеї до кінцевого результату</p>
-        <div class="video-container">
-            <div class="video-responsive">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/oCXVlp9uhiw?si=1ao1F-xUSZSMm6RB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <source src="d:\portfolio\tier.MP4" type="video/mp4">
-            </video>
-        </div>       
+            <div class="card video-card">
+                <span class="tag">Відео</span>
+                <h3>Промо ролик для Taer</h3>
+                <p>Монтаж рекламного відеоролику для компанії Taer. Задача показати процес створення від ідеї до кінцевого результату</p>
+                <div class="video-container">
+                    <div class="video-responsive">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/oCXVlp9uhiw?si=1ao1F-xUSZSMm6RB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
-        <div class="card video-card">
-        <span class="tag">Відео</span>
-            <h3>Проєкт «Форум до дня захисту прав людини»</h3>
-            <p>Монтаж відео зберігаючи зміст форуму, коригування звуку, кольорова корекція.</p>
+            <div class="card video-card">
+                <span class="tag">Відео</span>
+                <h3>Проєкт «Форум до дня захисту прав людини»</h3>
+                <p>Монтаж відео зберігаючи зміст форуму, коригування звуку, кольорова корекція.</p>
                 <div class="video-responsive">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZulIj1bl-0Q?si=MeTZYMTuO0X3kBM6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZulIj1bl-0Q?si=MeTZYMTuO0X3kBM6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
     </section>
 
